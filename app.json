@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "primeiroExercicio",
+    "slug": "primeiroExercicio",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
