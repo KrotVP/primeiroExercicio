@@ -37,7 +37,6 @@ export const Login = () => {
                 <TouchableOpacity style={style.botao}>
                         <Text style={style.textoBotao}>Entrar</Text>
                 </TouchableOpacity>
-                <Text>{'\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'}</Text>
                 </ImageBackground>
                 
             </View>
