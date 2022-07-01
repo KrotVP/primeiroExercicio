@@ -4,7 +4,7 @@ import { style } from "./styles";
 import fundo from "../../assets/images/fundo.jpeg"
 import essa from "../../assets/icons/essamesmo.png"
 
-export const Login = () => {
+export const Login = ({navigation}) => {
     const [email, setEmail] = useState<string>("")
 
     const [password, setPassword] = useState<string>("")
@@ -34,7 +34,7 @@ export const Login = () => {
                 ></TextInput>
                 <Text style={style.textoSecundario}>Esqueceu sua senha?</Text>
                 <Text style={style.textoSecundario}>Utilizar um gerenciador de senhas?</Text>
-                <TouchableOpacity style={style.botao}>
+                <TouchableOpacity style={style.botao} onPress={()=> navigation.navigate('Profile') }>
                         <Text style={style.textoBotao}>Entrar</Text>
                 </TouchableOpacity>
                 </ImageBackground>

@@ -15,20 +15,22 @@ import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons"
 import FontAwesome from "@expo/vector-icons/FontAwesome"
 import  AntDesign  from '@expo/vector-icons/AntDesign';
 import Feather from "@expo/vector-icons/Feather"
-import {Wave} from "../../assets/icons/wave.png"
 
 
-export const Profile = () => {
+export const Profile = ({navigation}) => {
     return <View style={{ flex: 1 }}>
         <View style={style.header}>
             <Text style={style.textoHeader}>Configurações de Usuário</Text>
+            <TouchableOpacity onPress={()=> navigation.navigate('Login') }>
             <Ionicons name={"enter-outline"} size={36} color={"white"} />
+            </TouchableOpacity>
             <Ionicons name={"ellipsis-vertical"} size={32} color={"white"} />
         </View>
 
         <ScrollView style={{ flex: 2 }}>
             <View style={style.viewUnder}></View>
             <View style={style.viewImage}>
+                
                 <Image
                     source={Perfil}
                     style={style.image}
@@ -141,7 +143,7 @@ export const Profile = () => {
                 <TouchableOpacity style={style.footerButton}>
                     <Feather name={'at-sign'} color={'#a4a8a9'} size={25} />
                 </TouchableOpacity>
-                <TouchableOpacity style={style.footerButton}>
+                <TouchableOpacity style={style.footerButton} onPress={()=> navigation.navigate('Login') }>
                 <Image
                     source={Perfil}
                     style={style.imageFooter}
